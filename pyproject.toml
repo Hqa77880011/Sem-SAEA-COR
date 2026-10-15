@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "semsaea"
+version = "0.1.0"
+description = "Data-adaptive semantic priors for surrogate-assisted evolutionary optimization implementation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7", "pymoo>=0.6.1", "sentence-transformers>=3.0"]
+
+[project.scripts]
+semsaea = "semsaea.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["semsaea*"]

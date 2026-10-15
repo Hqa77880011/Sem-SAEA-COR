@@ -1,0 +1,32 @@
+{
+  "problem": "zdt1",
+  "variables": [
+    "First decision coordinate controls the location along the objective trade-off front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front",
+    "Decision coordinate contributing to distance from the Pareto front"
+  ],
+  "objectives": [
+    "First objective measures the front position",
+    "Second objective balances front position with the remaining distance from the efficient front"
+  ],
+  "constraints": [],
+  "ideal": [
+    0,
+    0
+  ],
+  "nadir": [
+    1,
+    1
+  ],
+  "reference": [
+    1.1,
+    1.1
+  ]
+}
