@@ -52,7 +52,7 @@ def fit_models(x, response, relation, blank, no_gate, no_decay):
         else:
             prior = np.log(0.15) + np.log(4) * (1 - relation[q])
             semantic = GaussianProcess(prior, strength).fit(x, response[:, q])
-            gate = bool(no_gate or semantic.loo_nlpd <= 1.05 * numerical.loo_nlpd)
+            gate = bool(no_gate or semantic.loo_nlpd <= numerical.loo_nlpd + 0.05 * abs(numerical.loo_nlpd))
             chosen = semantic if gate else numerical
             semantic_score = semantic.loo_nlpd
         models.append(chosen)
